@@ -1,0 +1,521 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+}
+@font-face{
+    font-family: "Open Sans";
+    src: url('../../Projeto-3/fonts/OpenSans-Light.ttf');
+
+}
+.clear{
+    clear: both;
+}
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+
+}
+/* estilizando o botão do slick */
+    .slick-dotted ul{
+        list-style: none;
+        text-align: center;
+        margin: 50px;
+        position: relative;
+    }
+    .slick-dotted li{
+        display: inline-block;
+        margin: 0 7px;
+
+    }
+    .slick-dotted button :focus{
+        outline: 0;
+    }
+    .slick-dotted li button{
+        width: 16px;
+        height: 16px;
+        border-radius: 8px;
+        color: chartreuse;
+        border-width: 0;
+        background: coral;
+        opacity: 1;
+        cursor: pointer;
+    }
+    li.slick-active button{
+        background: cornflowerblue;
+        color: black;
+    }
+    .slick-slide:focus{
+        outline: none;
+    }
+
+/* terminando o botão do slick */
+header{
+    background: paleturquoise;
+    width: 100%;
+    padding: 10px 2%;
+}
+header .logo{
+    float: left;
+}
+.logo span{
+ color: orangered;
+}
+.logo a{
+    color: orange;
+    text-decoration: none;
+}
+.menu-mobile{
+    display: none;
+    float: right;
+    background-image: url('../img/list\ \(1\).png');
+    width: 28px;
+    height: 28px;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+nav.menu-mobile ul{
+    text-align: center;
+    width: 30%;
+    float: right;
+    display: none;
+    border: 1px solid black;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: 38px;
+    z-index: 1;
+}
+nav.menu-mobile ul li a{
+    text-decoration: none;
+    color: black;
+   
+}
+nav.menu-mobile ul{
+    list-style-type: none;
+  
+}
+nav.menu-mobile ul li{
+    padding: 10px 0;
+    border: 2px solid black;
+}
+header .menu-desktop{
+    float: right;
+
+}
+.menu-desktop ul{
+    list-style-type: none;
+
+}
+.menu-desktop ul li{
+    margin: 10px;
+    float: left;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.menu-desktop ul li a{
+    text-decoration: none;
+    color: orange;
+}
+/*finalizando o header  */
+
+.mosaico-sigle{
+    float: left;
+    width: calc(100%/6);
+}
+.img-mosaico-sigle{
+    background-color: #ccc;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border: 4px solid white;
+    padding-top: 100% ;
+    width: 100%;
+}
+/* finalizando o mosaico */
+.servico > .container{
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -30px;
+}
+.servico > .container .box-servico{
+    background-image: url('../img/icon.png');
+    background-size: 22px 22px;
+    background-position: center calc(100% - 5px);
+    background-repeat: no-repeat;
+    
+}
+.servico > .container .box-servico:nth-of-type(1){
+    padding: 30px 0;
+    width: 30%;
+    background-color: turquoise;
+
+}
+.servico > .container .box-servico:nth-of-type(2){
+    padding: 60px 0;
+    width: 40%;
+    background-color: rgb(36, 36, 63);
+    background-image: none;
+    
+}
+.servico > .container .box-servico:nth-of-type(3){
+    padding: 30px 0;
+    width: 30%;
+    background-color: turquoise;
+    
+}
+.box-servico h2{
+    text-align: center;
+    color: whitesmoke;
+    font-size: 25px;
+    padding: 10px 0;
+}
+.box-servico p{
+    font-size: 14px;
+    text-align: center;
+
+}
+/* terminando a sessão serviço */
+section.perfil-container .container{
+    max-width: 1000px;
+}
+section.perfil-container{
+    padding: 40px 0;
+}
+section.perfil-container .perfil-wraper{
+    position: relative;
+    padding-top: 60%;
+}
+section.perfil-container .perfil-wraper-2{
+    position: absolute;
+    align-items: center;
+    left: 0;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+ .img-perfil{
+    background-image: url('../img/midoriya.png');
+    width: 40%;
+    background-size: 100% 100%;
+    height: 100%;
+}
+.texto-perfil{
+    width: 60%;
+    padding: 0 30px;
+}
+.texto-perfil h2{
+    text-align: center;
+    padding-bottom: 10px;
+    color: teal;
+}
+.texto-perfil p{
+    font-size: 15px;
+}
+/* finalizando a classe perfil */
+section.videos{
+    padding: 50px 0;
+
+}
+section.videos .box-video{
+    width: calc(100%/3);
+    float: left;
+    
+    position: relative;
+    padding-top: calc(33.3% * 0.6);
+}
+section.videos .box-video iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 2%;
+    width: 100%;
+    height: 100%;
+}
+/* terminando a sessao videos  */
+
+section.tratamento .tratamento-container{
+    float: left;
+    width: calc(100% / 3);
+}
+section.tratamento .tratamento-sigle{
+    padding: 20px;
+}
+.tratamento-sigle h2{
+    color: rgb(30, 37, 51);
+    font-size: 25px;
+}
+.tratamento-sigle p{
+    font-size: 16px;
+    padding: 10px 0;
+
+}
+section.tratamento > h2{
+    color: rgb(36, 48, 48);
+    margin: 0 auto;
+    text-align: center;
+    font-size: 28px;
+    padding: 11px 0;
+}
+section.tratamento{
+    padding: 50px 0;
+}
+/* finalizando a sessao de tratamento */
+
+section.depoimentos h2{
+    text-align: center;
+    font-size: 25px;
+}
+section.depoimentos > .container{
+    max-width: 400px ;
+    padding: 70px 0;
+}
+section.depoimentos .depoimento-sigle{
+    text-align: center;
+}
+.depoimento-sigle .nome-depoimento{
+    padding: 8px 0;
+    display: inline-block;
+}
+.depoimento-sigle img{
+    border-radius: 20px;
+    
+}
+.depoimento-sigle span{
+    font-size: 13px;
+    vertical-align: top;
+    display: inline-block;
+}
+/* finalizando os depoimentos */
+.instagram-chamada img{
+    padding-bottom: 10px;
+}
+.instagram-chamada{
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 40px 2%;
+    background-color: darkcyan;
+}
+.instagram-chamada p{
+    font-size: 16px;
+    color:white;
+    line-height: 22px;
+}
+section.instagramichamada .mosaico-sigle{
+    float: left;
+    width: 100%;
+}
+.img-mosaico-sigle-social{
+    float: left;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    vertical-align: middle;
+    width: calc(100% / 9);
+    padding-top: calc(100% / 9);
+    background-color: darkgoldenrod;
+    border: 2px solid black;
+}
+.facebook-chamada{
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 40px 2%;
+    background-color: rgb(43, 56, 56);
+}
+.facebook-chamada p{
+    color: white;
+    font-size: 16px;
+    line-height: 22px;
+}
+/* finalizando a sessao do instagram */
+section.contato{
+    padding: 60px 2%;
+}
+section.contato > .container > h2{
+    font-size: 25px;
+    color: rgb(37, 26, 26);
+    text-align: center;
+}
+section.contato form{
+    width: 100%;
+    max-width: 500px;
+    
+    margin:30px auto;
+}
+.form-wraper label{
+    font-size: 18px;
+    display: block;
+}
+.form-wraper input[type=email]{
+    width: 100%;
+    padding: 0 10px;
+    height: 33px;
+}
+.form-wraper  input[type=text]{
+    width: 100%;
+    height: 33px;
+    line-height: 33px;
+    padding-left: 9px;
+}
+.form-wraper{
+    float: left;
+    padding: 0 10px;
+    margin-top: 10px;
+}
+.w100{
+    width: 100%;
+}
+.w50{
+    width: 50%;
+}
+.form-wraper textarea{
+    width: 100%;
+    height: 120px;
+    resize: none;
+    
+}
+.form-wraper input[type=submit]{
+    width: 100px;
+    height: 35px;
+    cursor: pointer;
+    border: 0;
+    display: inline-block;
+    background-color: darkgreen;
+    color: white;
+}
+/* contato finalizado*/
+
+footer{
+    padding: 40px 2%;
+    text-align: center;
+    background-color: rgb(61, 121, 233);
+}
+footer .footer{
+    float: left;
+    width: calc(100% / 3);
+}
+.footer h2{
+    font-size: 25px;
+    color: rgb(29, 22, 22);
+    padding: 10px;
+}
+.footer p{
+    font-size: 13px ;
+    color: white;
+}
+
+
+@media screen and (max-width: 1024px){
+    .img-mosaico-sigle-social{
+        width: calc(100% / 6);
+        padding-top: calc(100% / 6);
+    }
+    .mosaico-social > div:nth-of-type(1n + 7){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+    nav.menu-desktop{
+        display: none;
+    }
+    nav.menu-mobile{
+        display: block;
+
+        
+    }
+   
+    section.servico .container{
+        flex-direction: column;
+    }
+
+    .servico > .container .box-servico:nth-of-type(1){
+        padding: 30px 2%;
+        width: 80%;
+        max-width: 350px;
+        background-color: turquoise;
+    
+    }
+    .servico > .container .box-servico:nth-of-type(2){
+        padding: 60px 2%;
+        width: 90%;
+        max-width: 380px;
+        background-color: rgb(36, 36, 63);
+        background-image: none;
+        
+    }
+    .servico > .container .box-servico:nth-of-type(3){
+        padding: 30px 2%;
+        width: 80%;
+        max-width: 350px;
+        background-color: turquoise;
+        
+    }
+    .img-perfil{
+        width: 50%;
+        display: inline-block;
+        padding-top: 70%;
+        height: auto;
+    }
+    .texto-perfil{
+       
+        display: inline-block;
+        width: 100%;
+        padding: 30px 2%;
+    }
+    section.perfil-container .perfil-wraper-2{
+        display: inline-block;
+        text-align: center;
+        position: static;
+        height: auto;
+
+    }
+    section.perfil-container .perfil-wraper{
+        padding-top: 0;
+    }
+    section.videos  .box-video{
+        width: calc(70% / 1);
+        display: inline-block;
+        float: none;
+        padding-top: calc(70% * 0.6);
+       
+    }
+    section.videos{
+        text-align: center;
+    }
+    .img-mosaico-sigle-social{
+        width: calc(100% / 4);
+        padding-top: calc(100% / 4);
+    }
+    .mosaico-social > div:nth-of-type(1n + 5){
+        display: none;
+    }
+    footer .footer{
+        float: none ;
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .img-perfil{
+        padding-top: 110%;
+        width: 80%;
+    }
+    section.videos .box-video {
+        width: 100%;
+        padding-top: calc(100% * 0.6);
+    }
+    .img-mosaico-sigle-social{
+        width: calc(100% / 2);
+        padding-top: calc(100% / 2);
+    }
+    .mosaico-social > div:nth-of-type(1n + 3){
+        display: none;
+    }
+}
